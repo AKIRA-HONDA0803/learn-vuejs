@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js 3</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="app">
+    <!-- キャメルケース -->
+    <p>Hello
+      <span v-bind:style="{ color: color, fontSize: fontSize + 'px' }">
+        Vue.js!
+      </span>
+    </p>
+    <!-- ケバブケース(''で囲う必要あり) -->
+    <p>Hello
+      <span v-bind:style="{ color: color, 'font-size': fontSize + 'px' }">
+        Vue.js!
+      </span>
+    </p>
+  </div>
+  <script src="https://unpkg.com/vue@3.1.5"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
